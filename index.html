@@ -3,119 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Siva's Portfolio - Full Stack Developer crafting seamless digital experiences">
+    <meta name="keywords" content="full stack developer, portfolio, web development, Siva">
     <title>Siva's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <header>
-        <div class="logo">SG</div>
-        <nav>
+        <div class="logo" aria-label="Siva's Logo">SB</div>
+        <nav class="nav-container" aria-label="Main navigation">
             <ul>
-                <li><a href="..index.html">Home</a></li>
-                <li><a href="pages/resume.html">About me</a></li>
-                <li><a href="pages/recentwork.html">Recent Work</a></li>
-                <li><a href="pages/testimonials.html">Testimonials</a></li>
-                <li><a href="pages/case-studies.html">Case Studies</a></li>
-
-                <li><a href="#contact"><button>Get in Touch</button></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="./pages/About.html">About</a></li>
+                <li><a href="./recentwork.html">Work</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact"><button class="nav-btn" aria-label="Book a call">Book a Call</button></a></li>
             </ul>
         </nav>
+        <div class="social-links-header" aria-label="Social media links">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" aria-label="X profile"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+        </div>
     </header>
+    
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="hero-content">
-                <p class="welcome">Welcome to my site</p>
-                <p class="intro">Hello, I'm</p>
-                <h1 class="animated-h1">Siva</h1>
-                <p class="about-text">I am a passionate developer who crafts innovative websites and dynamic apps, bringing ideas to life with code and creativity</p>
-                <button class="collaborate-btn">Let Us Collaborate</button>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="photo-card">
-                    <img src="assets/siva.jpg" alt="Siva's Portrait">
+                <a href="https://finalized-web-git-main-iam-siva25s-projects.vercel.app/" aria-label="Next Ventures live site">
+                    <div class="live-venture-btn">
+                        <span>New</span> Next Ventures is live! <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <h1>I help founders turn ideas into seamless <span>digital experiences</span></h1>
+                <p class="sub-headline">Hello, I'm Siva, a Full Stack Developer</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" id="open-contact-modal" aria-label="Connect with Siva">Let's Connect <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
-
-        <section class="about-summary-section">
-            <h2>A Little About Me</h2>
-            <p>I'm a full-stack developer with a passion for building elegant and efficient web applications. With expertise in **React, Node.js, and Java**, I specialize in creating seamless user experiences from front to back. My goal is to not only write clean, maintainable code but also to solve real-world problems with technology. Let's build something amazing together.</p>
-        </section>
-
-        <section class="recent-work-highlights">
-            <h2>Recent Work</h2>
-            <div class="work-cards-container">
-                <div class="work-card">
-                    <img src="assets/project1.jpg" alt="Project 1 Screenshot">
-                    <h3>E-commerce Platform</h3>
-                    <p>A responsive e-commerce site built with React and a custom API, featuring a seamless checkout process and user authentication.</p>
-                </div>
-                <div class="work-card">
-                    <img src="assets/project2.jpg" alt="Project 2 Screenshot">
-                    <h3>Task Management App</h3>
-                    <p>A collaborative web application for teams to manage tasks and projects, developed using Node.js and a RESTful API.</p>
-                </div>
-                <div class="work-card">
-                    <img src="assets/project3.jpg" alt="Project 3 Screenshot">
-                    <h3>Personal Blog</h3>
-                    <p>A simple, elegant blog with a content management system built from scratch with Python and Django.</p>
+        <section class="main-content-grid">
+            <div class="collaboration-card">
+                <div class="card-content">
+                    <h2>Skills</h2>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-item"><i class="fab fa-react" aria-hidden="true"></i><span>ReactJS</span></div>
+                        <div class="skill-icon-item"><i class="fab fa-node-js" aria-hidden="true"></i><span>NodeJS</span></div>
+                        <div class="skill-icon-item"><i class="fab fa-js-square" aria-hidden="true"></i><span>TypeScript</span></div>
+                        <div class="skill-icon-item"><i class="fab fa-docker" aria-hidden="true"></i><span>Docker</span></div>
+                        <div class="skill-icon-item"><i class="fab fa-html5" aria-hidden="true"></i><span>HTML5</span></div>
+                        <div class="skill-icon-item"><i class="fab fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></div>
+                    </div>
                 </div>
             </div>
-            <a href="pages/recent-work.html" class="all-work-link">View All Projects →</a>
-        </section>
-
-        <section class="skills-section">
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
+            <div class="skills-card">
+                <div class="card-content">
+                    <h2>What I do</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-pencil-ruler" aria-hidden="true"></i></div>
+                            <h3>Design</h3>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                            <h3>Development</h3>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                            <h3>Maintenance</h3>
+                        </div>
+                    </div>
+                    <p>I prioritize client collaboration, fostering open communication</p>
+                    <a href="#contact" class="book-call-link" aria-label="Book a call with Siva">Book a call <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-node-js"></i>
-                    <p>Node.js</p>
+            </div>
+            <div class="timezone-card">
+                <div class="card-content">
+                    <h2>Time Zone Flexibility</h2>
+                    <div class="timezone-grid">
+                        <span>GB UK</span>
+                        <span>IN India</span>
+                        <span>US USA</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
+            </div>
+            <div class="work-together-card">
+                <div class="card-content">
+                    <div class="card-logo" aria-label="Siva's secondary logo">SG</div>
+                    <h2>Let's Collaborate</h2>
+                    <a href="mailto:your_email@example.com" class="email-btn" aria-label="Email Siva">your_email@example.com</a>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS3</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
+            </div>
+            <div class="standout-card">
+                <div class="card-content">
+                    <h2>My Hobbies</h2>
+                    <div class="hobbies-list">
+                        <div class="hobby-item">
+                            <i class="fas fa-music" aria-hidden="true"></i>
+                            <p>Music</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                            <p>Cinema</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                            <p>Reading</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                            <p>Fitness</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="testimonials-section">
-            <h2>Client Testimonials</h2>
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <p>"Siva's work ethic and problem-solving skills are exceptional. They delivered a high-quality product ahead of schedule."</p>
-                    <span>— Niwas, CEO at Viwebsync</span>
+        <section class="recent-work-section" id="projects">
+            <div class="work-container">
+                <div class="work-titles">
+                    <h2>Recent Work</h2>
+                    <div class="project-title-container">
+                        <h3 class="active-title">A platform connecting students and instructors.</h3>
+                        <h3 class="active-title">Diabetes prediction using ML</h3>
+                    </div>
+                    <a href="./recentwork.html" class="view-all-link" aria-label="View all projects">View All Work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="project-details-container">
+                    <div class="project-card active-card">
+                        <div class="project-content">
+                            <img src="assets/project1.jpg" alt="Viwebsync project screenshot" class="project-image" loading="lazy">
+                            <div class="project-info">
+                                <h3>Viwebsync</h3>
+                                <p>Test and Measurement solution for Aerospace, Defense, Automotive, and Industries.</p>
+                                <ul>
+                                    <li>Built with React.js and Node.js for scalability.</li>
+                                    <li>Styled using Tailwind CSS with animations by Motion.dev.</li>
+                                    <li>Used Zustand for state management and Zod for validation.</li>
+                                    <li>Integrated MongoDB and RESTful APIs with Node.js and Express.</li>
+                                    <li>User-friendly interface for seamless interactions.</li>
+                                </ul>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Tailwind CSS</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card active-card">
+                        <div class="project-content">
+                            <img src="assets/project2.jpg" alt="Genik Technologies project screenshot" class="project-image" loading="lazy">
+                            <div class="project-info">
+                                <h3>Genik Technologies</h3>
+                                <p>Diabetes prediction using machine learning algorithms.</p>
+                                <ul>
+                                    <li>Developed using Python and machine learning algorithms.</li>
+                                    <li>Collected patient data from reputed hospitals.</li>
+                                    <li>Data preprocessing, model training, and visualization with Pandas, NumPy, and Scikit-learn.</li>
+                                </ul>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Machine Learning</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">NumPy</span>
+                                    <span class="tag">Scikit-learn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Get in Touch</h2>
-            <p>Ready to start a project? I'd love to hear from you!</p>
-            <a href="mailto:your_email@example.com" class="contact-btn">Email Me</a>
-        </section>
-
+      <section class="contact-card-section">
+    <div class="contact-card-container">
+        <div class="contact-card">
+            <div class="card-header">
+                <button class="tab-button active" data-tab="quick-connect">Quick connect</button>
+                <button class="tab-button" data-tab="fill-form">Fill a form</button>
+            </div>
+            <div class="card-body">
+                <div class="tab-content active" id="quick-connect">
+                    <div class="contact-options-grid">
+                        <div class="contact-option-card email-option">
+                            <i class="fas fa-envelope"></i>
+                            <div class="option-details">
+                                <h4>Email</h4>
+                                <a href="mailto:hello@siva.in">hello@siva.in</a>
+                                <p>Send me an email directly</p>
+                            </div>
+                        </div>
+                        <div class="contact-option-card call-option">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="option-details">
+                                <h4>Book a Call</h4>
+                                <a href="#">Schedule a time slot</a>
+                                <p>Book a call on my calendar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability-status">
+                        <span class="status-dot"></span>
+                        Currently available for new opportunities
+                    </div>
+                </div>
+                <div class="tab-content" id="fill-form">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col about-col">
+                    <div class="footer-logo" aria-label="Siva's footer logo">SB</div>
+                    <p>I'm Siva - a full-stack developer, freelancer, and problem solver. Thanks for visiting!</p>
+                </div>
+                <div class="footer-col">
+                    <h2>General</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./pages/About.html">About</a></li>
+                        <li><a href="./recentwork.html">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Specifics</h2>
+                    <ul>
+                        <li><a href="#">Guest Book</a></li>
+                        <li><a href="#">Bucket List</a></li>
+                        <li><a href="#">Uses</a></li>
+                        <li><a href="#">Attribution</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Siva. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
