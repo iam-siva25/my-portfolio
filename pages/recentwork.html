@@ -3,56 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siva's Portfolio - Recent Work</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">SG</div>
-        <nav>
+    
+       <header>
+        <div class="logo" aria-label="Siva's Logo">SB</div>
+        <div class="hamburger" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <nav class="nav-container" aria-label="Main navigation">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="recent-work.html">Recent Work</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="#contact"><button>Get in Touch</button></a></li>
+                <li><a href="../pages/About.html">About</a></li>
+                <li><a href="../pages/recentwork.html">Work</a></li>
+                <li><a href="../pages/Blog.html">Blog</a></li>
+                <li><a href="../index.html#contact-card-session"><button class="nav-btn" aria-label="Book a call">Book a Call</button></a></li>
             </ul>
         </nav>
+        <div class="social-links-header" aria-label="Social media links">
+            <a href="https://github.com/iam-siva25" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sivabala02/" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Siva_Tech2002" target="_blank" aria-label="X profile"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_._sivaa/" target="_blank" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+        </div>
     </header>
+
     <main>
-        <section class="page-header">
-            <h1>Recent Work</h1>
-            <p>A collection of my key projects, highlighting my skills in web development and design.</p>
+         <section class="recent-work-section" id="projects">
+            <div class="work-container">
+                <h2>Recent Work</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="../assets/project1.jpg" alt="Viwebsync project screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Viwebsync</h3>
+                            <p>Test and Measurement solution for Aerospace, Defense, Automotive, and Industries.</p>
+                            <ul>
+                                <li>Built with React.js and Node.js for scalability.</li>
+                                <li>Styled using Tailwind CSS with animations by Motion.dev.</li>
+                                <li>Used Zustand for state management and Zod for validation.</li>
+                                <li>Integrated MongoDB and RESTful APIs with Node.js and Express.</li>
+                                <li>User-friendly interface for seamless interactions.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/project2.jpg" alt="Genik Technologies project screenshot" class="project-image" loading="lazy">
+                        <div class="project-info">
+                            <h3>Genik Technologies</h3>
+                            <p>Diabetes prediction using machine learning algorithms.</p>
+                            <ul>
+                                <li>Developed using Python and machine learning algorithms.</li>
+                                <li>Collected patient data from reputed hospitals.</li>
+                                <li>Data preprocessing, model training, and visualization with Pandas, NumPy, and Scikit-learn.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./recentwork.html" class="view-all-btn" aria-label="View all projects">View All Work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
         </section>
-
-        <section class="work-grid">
-            <div class="work-card">
-                <img src="../assets/project1.jpg" alt="E-commerce Platform Project">
-                <div class="work-content">
-                    <h3>E-commerce Website Re-design</h3>
-                    <p>A complete overhaul of an outdated e-commerce platform with a focus on improving UX and increasing conversion rates.</p>
-                    <p class="tech-used">**Technologies:** React.js, Node.js, Express, MongoDB</p>
-                </div>
-            </div>
-            <div class="work-card">
-                <img src="../assets/project2.jpg" alt="Task Management App Project">
-                <div class="work-content">
-                    <h3>Mobile-first Task Management App</h3>
-                    <p>A collaborative task management application for teams to create, assign, and track tasks in real-time. Built with a robust backend for real-time data.</p>
-                    <p class="tech-used">**Technologies:** Vue.js, Firebase, Sass, JavaScript</p>
-                </div>
-            </div>
-            <div class="work-card">
-                <img src="../assets/project3.jpg" alt="Data Visualization Project">
-                <div class="work-content">
-                    <h3>Interactive Data Visualization Dashboard</h3>
-                    <p>A dynamic dashboard that displays complex data in an easy-to-understand format with interactive charts and a user-friendly interface.</p>
-                    <p class="tech-used">**Technologies:** Python, Django, D3.js, PostgreSQL</p>
-                </div>
-            </div>
-            </section>
-
-    </main>
+</main>
+         <footer>
+    <div class="footer-container">
+        <div class="footer-col about-col">
+            <div class="footer-logo" aria-label="Siva's footer logo">SB</div>
+            <p>I'm Siva - a full-stack developer, freelancer, and problem solver. Thanks for visiting!</p>
+        </div>
+        <div class="footer-col">
+            <h2>General</h2>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="./pages/About.html"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="./recentwork.html"><i class="fas fa-project-diagram" aria-hidden="true"></i> Projects</a></li>
+                <li><a href="#blog"><i class="fas fa-blog" aria-hidden="true"></i> Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Specifics</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-book" aria-hidden="true"></i> Guest Book</a></li>
+                <li><a href="#"><i class="fas fa-list-check" aria-hidden="true"></i> Bucket List</a></li>
+                <li><a href="#"><i class="fas fa-tools" aria-hidden="true"></i> Uses</a></li>
+                <li><a href="#"><i class="fas fa-quote-right" aria-hidden="true"></i> Attribution</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Siva. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#"><i class="fas fa-shield-alt" aria-hidden="true"></i> Privacy Policy</a>
+            <a href="#"><i class="fas fa-file-contract" aria-hidden="true"></i> Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
